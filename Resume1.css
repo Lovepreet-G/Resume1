@@ -7,7 +7,7 @@ body
     height: 60vh;   
     background-image: url(back.jpg) ;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: fit;
     background-position: center;
     opacity: 0.85;
 }
