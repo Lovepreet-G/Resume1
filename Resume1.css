@@ -1,14 +1,15 @@
 body
 {
-    margin:0px;
+    margin:-20px;
 }
 #body-header
 {
     height: 60vh;   
-    background-image: url(back.jpg) ;
+    background-image: url(back3.jpg) ;
     background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* background-position: center; */
     opacity: 0.85;
 }
 .horizontal-list
@@ -30,7 +31,7 @@ body
 {
     color: aliceblue;
     text-decoration: none;
-    transition: color 1s, border-bottom 3s ;
+    transition: color 0.5s, border-bottom 3s ;
     
     
 }
@@ -39,6 +40,10 @@ body
     color: rgb(226, 126, 79);
     border-bottom: 1px solid white;
     
+}
+#social
+{
+    display: none;
 }
 
 #my-name
@@ -79,6 +84,31 @@ section
     text-align: center;
 
 }
+/* education */
+#education
+{
+    padding: 5%;
+}
+.heading
+{
+    font-size: 2.2em;
+    color: #2857a4;
+    font-weight: 200;
+    margin-bottom: 5px;
+}
+.duration
+{
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.6em;
+    
+}
+.grade
+{
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.3em; 
+}
 .section-heading span
 {
     font-size: 40px;
@@ -109,10 +139,10 @@ section:nth-child(2n+1)
 }
 #my-image
 {
-    height: 12rem;
-    width: 12rem;
+    height: 15rem;
+    width: 15rem;
     margin: auto;
-    margin-top: -15vh;
+    margin-top: -20vh;
 }
 #my-image img
 {
@@ -264,13 +294,15 @@ section:nth-child(2n+1)
     
     transition: all 0.5s ease-in-out 0s;
     position: absolute;
+    /* color: #2857a4; */
     top: 0%;
     left: 0%;
     height: 100%;
     color: transparent;
-    text-align: center;
+    text-align: left;
     padding: 10px;
     width: 100%;
+    font-size: 1.1em;
     
 
 }
@@ -282,13 +314,13 @@ section:nth-child(2n+1)
 }
 
 .portfolio-image-container:hover .portfolio-details {
-    background-color: #80808078;
+    background-color: #000000dc;
     
     display: block;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
-/* COntact */
+/* Contact */
 #contact .section-heading span
 {
     color: white;
@@ -300,23 +332,27 @@ section:nth-child(2n+1)
     
 }
 
-#contact #contact-container
+#contact-container
 {
     display: flex;
     margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 #contact-form 
 {
-    width: 50%; 
+    width: 100%; 
 }
 #contact-form form
 {
-    margin-left: 20%;
+    /* margin-left: 20%; */
 }
 #contact-details
 {
-    width: 35%;
-    margin-left: 6%;
+    width: 100%;
+    margin-top: 5%;
+    /* margin-left: 6%; */
+    text-align: center;
     
 }
 #contact-details h3 {
@@ -345,7 +381,6 @@ section:nth-child(2n+1)
 .my-address-info i {
     color: white;
 }
-
 #contact-form input, textarea {
     max-width: 90%;
     margin: 15px;
@@ -388,6 +423,10 @@ button:focus {
     
 }
 /* Work experience */
+#experience
+{
+    display: none;
+}
 .timeline
 {
     position: relative;   
@@ -396,10 +435,9 @@ button:focus {
 }
 .timeline-box
 {
-    left: 5%;
+    left: 0%;
     margin-top: 5%;
     position: relative;
-    border: 1px solid black;
     width: 40%;
     min-height: 150px;
     
@@ -411,7 +449,7 @@ button:focus {
     border-radius: 50%;
     background-color: #989882;
     top: 20%;
-    right: -13.6%;
+    right: -26%;
     width: 0.5rem;
     height: 0.5rem;
     z-index: 1;
@@ -446,7 +484,7 @@ button:focus {
 {
     .timeline-divider
     {
-        left: 5%;
+        left: 0%;
     }
     .timeline-box
     {
@@ -455,9 +493,16 @@ button:focus {
     }
     .timeline-box::after
     {
-        left: -4.8% !important;
+        left: -12% !important;
+        
     }
-   
+    .timeline-box
+    {
+        width: 90%;
+        margin-left: 2%;     
+        
+    }
+    
 }
 
 .timeline-travaler
